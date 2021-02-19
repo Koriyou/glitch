@@ -41,15 +41,15 @@ with open("nightmarket/glitch/ammunition.json") as json_file:
 with open("nightmarket/glitch/armor.json") as json_file:
         ARMOR = json.load(json_file)
 with open("nightmarket/glitch/cyberdeckhardware.json") as json_file:
-        CYBERDECK_HARDWARE = json.load(json_file) 
+        CYBERDECK_HARDWARE = json.load(json_file)
 with open("nightmarket/glitch/cyberware.json") as json_file:
-        CYBERWARE = json.load(json_file)       
+        CYBERWARE = json.load(json_file)
 with open("nightmarket/glitch/exoticweapons.json") as json_file:
-        EXOTIC_WEAPONS = json.load(json_file)  
+        EXOTIC_WEAPONS = json.load(json_file)
 with open("nightmarket/glitch/gear.json") as json_file:
         GEAR = json.load(json_file)
 with open("nightmarket/glitch/meleeweapons.json") as json_file:
-        MELEE_WEAPONS = json.load(json_file)    
+        MELEE_WEAPONS = json.load(json_file)
 with open("nightmarket/glitch/programs.json") as json_file:
         PROGRAMS = json.load(json_file)
 with open("nightmarket/glitch/rangedweapons.json") as json_file:
@@ -57,7 +57,7 @@ with open("nightmarket/glitch/rangedweapons.json") as json_file:
 with open("nightmarket/glitch/streetdrugs.json") as json_file:
         STREET_DRUGS = json.load(json_file)
 with open("nightmarket/glitch/weaponattachments.json") as json_file:
-        WEAPON_ATTACHMENTS = json.load(json_file)        
+        WEAPON_ATTACHMENTS = json.load(json_file)
 @bot.event
 async def on_ready():
     print('Logged in as')
