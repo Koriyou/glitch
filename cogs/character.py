@@ -45,12 +45,12 @@ class Character(commands.Cog):
         active = DB.collection("users").document(str(ctx.message.author.id)).get().to_dict()["active"]
         stats_stream = DB.collection("stats").stream()
         skills_stream = DB.collection("skills").stream()
-        
+
         stats = []
         skills = []
 
         for stat in stats_stream:
-            stats.append(stat.id) 
+            stats.append(stat.id)
         for skill in skills_stream:
             skills.append(skill.id)
 
@@ -66,12 +66,12 @@ class Character(commands.Cog):
                    statorskill.lower() : val
                 }, merge=True
             )
-            
+
             results = "**" + active + "'s** *" + statorskill.capitalize() + "* is now set to " + str(val) + "."
 
         else:
             results = "\"" + statorskill + "\" isn't a STAT or Skill. Try again."
-        
+
         await ctx.send(results)
 
     @character.command(name="view", help="View information about your character.")
